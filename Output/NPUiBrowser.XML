@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NPUiBrowser</name>
+    </assembly>
+    <members>
+        <member name="T:NPUiBrowser.UiBrowser">
+            <summary>
+                用 CefSharp 57.0.0 的 WinForm 控件 封装成 WPF 用户控件
+                可支持页面地址绑定
+            </summary>
+            <summary>
+            UiBrowser
+            </summary>
+        </member>
+        <member name="F:NPUiBrowser.UiBrowser.AdressProperty">
+            <summary>
+                页面地址属性
+            </summary>
+        </member>
+        <member name="M:NPUiBrowser.UiBrowser.#ctor">
+            <summary>
+                Chrome 内核 WPF 浏览器
+            </summary>
+        </member>
+        <member name="P:NPUiBrowser.UiBrowser.Adress">
+            <summary>
+                页面地址
+            </summary>
+        </member>
+        <member name="P:NPUiBrowser.UiBrowser.Browser">
+            <summary>
+                CefSharp 控件
+            </summary>
+        </member>
+        <member name="E:NPUiBrowser.UiBrowser.OnBrowserInited">
+            <summary>
+                浏览器对象创建完成
+            </summary>
+        </member>
+        <member name="E:NPUiBrowser.UiBrowser.OnDOMLoaded">
+            <summary>
+                DOM创建完成
+            </summary>
+        </member>
+        <member name="E:NPUiBrowser.UiBrowser.OnLoadingStateChanged">
+            <summary>
+                加载状态改变
+            </summary>
+        </member>
+        <member name="E:NPUiBrowser.UiBrowser.OnFrameStartLoad">
+            <summary>
+                页面开始加载
+            </summary>
+        </member>
+        <member name="E:NPUiBrowser.UiBrowser.OnFrameEndLoad">
+            <summary>
+                页面加载完成
+            </summary>
+        </member>
+        <member name="M:NPUiBrowser.UiBrowser.Closing">
+            <summary>
+                销毁控件  在关闭窗口前调用
+            </summary>
+        </member>
+        <member name="M:NPUiBrowser.UiBrowser.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NPUiBrowser.RenderProcessMessageHandler">
+            <summary>
+                JavaScript Context 状态变化
+            </summary>
+        </member>
+        <member name="M:NPUiBrowser.RenderProcessMessageHandler.#ctor(System.Action{CefSharp.IWebBrowser,CefSharp.IBrowser,CefSharp.IFrame})">
+            <summary>
+                Javascript Contetx 变化
+            </summary>
+            <param name="loadAction"></param>
+        </member>
+        <member name="T:NPUiBrowser.Properties.Resources">
+            <summary>
+              强类型资源类，用于查找本地化字符串等。
+            </summary>
+        </member>
+        <member name="P:NPUiBrowser.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:NPUiBrowser.Properties.Resources.Culture">
+            <summary>
+              覆盖当前线程的 CurrentUICulture 属性
+              使用此强类型的资源类的资源查找。
+            </summary>
+        </member>
+    </members>
+</doc>
