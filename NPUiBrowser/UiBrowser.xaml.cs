@@ -2,6 +2,7 @@
 using System.Windows;
 using CefSharp;
 using CefSharp.WinForms;
+using Microsoft.DwayneNeed.Interop;
 
 namespace NPUiBrowser
 {
@@ -100,6 +101,10 @@ namespace NPUiBrowser
         public void Closing()
         {
             Cef.Shutdown();
+            Airspace.AirspaceMode = AirspaceMode.None;
+            Airspace.IsInputRedirectionEnabled = false;
+            Airspace.IsOutputRedirectionEnabled = false;
+            Airspace.RedirectionVisibility = RedirectionVisibility.Hidden;
             _browser = null;
             FormsHost.Child = null;
         }

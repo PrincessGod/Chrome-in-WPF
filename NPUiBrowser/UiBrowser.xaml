@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300" Loaded="UiBrowser_OnLoaded">
     <Grid>
-        <interop:AirspaceDecorator AirspaceMode="Redirect" IsInputRedirectionEnabled="True"
+        <interop:AirspaceDecorator x:Name="Airspace" AirspaceMode="Redirect" IsInputRedirectionEnabled="True"
                                    IsOutputRedirectionEnabled="True">
             <WindowsFormsHost x:Name="FormsHost" />
         </interop:AirspaceDecorator>
